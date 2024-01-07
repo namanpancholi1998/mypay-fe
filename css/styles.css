@@ -1,3 +1,95 @@
-body h1 {
-  color: blue;
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+/* header {
+  position: sticky;
+} */
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.navLogo img {
+  width: 10rem;
+}
+
+.navContainer nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 5rem;
+}
+
+.navContainer nav li {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.signInBtn button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+}
+
+.para {
+  background-color: #f5f5f5;
+  padding: 5px;
+  text-align: center;
+}
+
+.main_section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 38px;
+}
+.logo img {
+  width: 80px;
+}
+
+.content {
+  margin: 150px 10px;
+}
+
+.main_section .main_content .banner {
+  width: 530px;
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+@media screen and (max-width: 900px) {
+  .navContainer nav {
+    display: none;
+  }
+  .main_section .main_content .banner {
+    width: 400px;
+  }
+
+  .navLogo img {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main_section .main_content .banner {
+    display: none;
+  }
 }
