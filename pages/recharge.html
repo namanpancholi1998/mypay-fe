@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/recharge.css" />
+    <title>MYPay - Recharge</title>
+  </head>
+  <body>
+    <section class="navBar">
+      <div class="navLogo">
+        <!-- <img src="./images/logo.svg" alt="paytmLogo" /> -->
+        <h1>MYPay</h1>
+      </div>
+      <div class="navContainer">
+        <nav>
+          <ul>
+            <a href="../pages/welcome.html"><li>Home</li></a>
+            <a href=""><li>Company</li></a>
+            <a href=""><li>Career</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="signOutBtn">
+        <a href="../index.html" target="_self"><button>Sign Out</button></a>
+      </div>
+    </section>
+
+    <div class="temp">
+      <div class="recharge">
+        <div>
+          <h1>Mobile Recharge</h1>
+          <p>Recharge your mobile with MYPay</p>
+        </div>
+        <div>
+          <input
+            type="number"
+            name="mobileNumber"
+            id="mobileNumber"
+            placeholder="Please enter your number here"
+          />
+        </div>
+        <div class="custom-select" style="width: 40vw">
+          <select>
+            <option value="">Select Operator :</option>
+            <option value="airtel">Airtel</option>
+            <option value="bsnl">BSNL</option>
+            <option value="jio">Jio</option>
+            <option value="mtnl">MTNL</option>
+            <option value="vi">Vi</option>
+          </select>
+        </div>
+        <div>
+          <input type="number" name="amount" id="amount" placeholder="Amount" />
+        </div>
+        <div class="proceedBtn">
+          <button>Proceed to Recharge</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/select.js"></script>
+  </body>
+</html>
